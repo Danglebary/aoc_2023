@@ -1,5 +1,7 @@
 # Advent of Code 2023 Solutions
 
+![screenshot of logger output to stdio](screenshots/logger.png)
+
 This repository contains my solutions for the [Advent of Code 2023](https://adventofcode.com/2023) event. Each day's puzzle is solved with a separate Rust module.
 
 ## Structure
