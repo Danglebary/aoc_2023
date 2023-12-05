@@ -1,3 +1,4 @@
+mod day_four;
 mod day_one;
 mod day_three;
 mod day_two;
@@ -34,6 +35,11 @@ fn main() {
         "3" => match part {
             "1" => day_three::part_one::run(),
             "2" => day_three::part_two::run(),
+            _ => println!("Invalid part number: {}", part),
+        },
+        "4" => match part {
+            "1" => day_four::part_one::run(),
+            "2" => day_four::part_two::run(),
             _ => println!("Invalid part number: {}", part),
         },
         _ => println!("Invalid day number: {}", day),

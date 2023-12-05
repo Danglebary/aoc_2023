@@ -25,14 +25,14 @@ echo 'use crate::utils::file;
 
 #[allow(dead_code)]
 pub fn run() {
-    let _content = file::read_file_lines("src/day_'$day_string'/input.txt").unwrap();
+    let input = file::read_file_lines("src/day_'$day_string'/input.txt").unwrap();
 }' > "./src/day_$day_string/part_one.rs"
 
 echo 'use crate::utils::file;
 
 #[allow(dead_code)]
 pub fn run() {
-    let _content = file::read_file_lines("src/day_'$day_string'/input.txt").unwrap();
+    let input = file::read_file_lines("src/day_'$day_string'/input.txt").unwrap();
 }' > "./src/day_$day_string/part_two.rs"
 
 # Create an empty input.txt file
