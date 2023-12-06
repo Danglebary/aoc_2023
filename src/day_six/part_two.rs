@@ -33,7 +33,6 @@ pub fn run() {
         }
     }
 
-    // multiply each score together for the answer
     let answer = scores.len();
     Logger::numeric_answer(answer as u64);
 }
