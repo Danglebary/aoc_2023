@@ -50,5 +50,7 @@ pub fn run() {
         nums.push(str.parse::<usize>().unwrap());
     }
 
-    Logger::numeric_answer(nums.iter().sum::<usize>());
+    let answer = nums.iter().sum::<usize>();
+
+    Logger::numeric_answer(answer as u64);
 }

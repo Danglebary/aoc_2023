@@ -76,5 +76,5 @@ pub fn run() {
     let result = games.iter().map(|x| x.power_min).collect::<Vec<usize>>();
     let answer: usize = result.iter().sum();
 
-    Logger::numeric_answer(answer);
+    Logger::numeric_answer(answer as u64);
 }

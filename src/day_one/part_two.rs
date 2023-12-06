@@ -50,5 +50,5 @@ pub fn run() {
         })
         .sum();
 
-    Logger::numeric_answer(result as usize);
+    Logger::numeric_answer(result as u64);
 }

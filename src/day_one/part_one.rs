@@ -19,13 +19,11 @@ pub fn run() {
         })
         .collect::<Vec<usize>>();
 
-    let mut answer_number: usize = 0;
+    let mut answer: usize = 0;
 
     for num in result {
-        answer_number += num;
+        answer += num;
     }
 
-    Logger::numeric_answer(answer_number);
-
-    // dump_to_file("src/day_1/part_one_answer.txt", str).unwrap();
+    Logger::numeric_answer(answer as u64);
 }

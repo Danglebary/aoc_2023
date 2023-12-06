@@ -25,18 +25,21 @@ echo 'use crate::utils::file;
 
 #[allow(dead_code)]
 pub fn run() {
-    let input = file::read_file_lines("src/day_'$day_string'/input.txt").unwrap();
+    // let input = file::read_file_lines("src/day_'$day_string'/input.txt").unwrap();
+    let input = file::read_file_lines("src/day_'$day_string'/sample.txt").unwrap();
 }' > "./src/day_$day_string/part_one.rs"
 
 echo 'use crate::utils::file;
 
 #[allow(dead_code)]
 pub fn run() {
-    let input = file::read_file_lines("src/day_'$day_string'/input.txt").unwrap();
+    // let input = file::read_file_lines("src/day_'$day_string'/input.txt").unwrap();
+    let input = file::read_file_lines("src/day_'$day_string'/sample.txt").unwrap();
 }' > "./src/day_$day_string/part_two.rs"
 
-# Create an empty input.txt file
+# Create an empty input.txt and sample.txt file
 touch "./src/day_$day_string/input.txt"
+touch "./src/day_$day_string/sample.txt"
 
 # Read the existing content of the src/main.rs file
 existing_content=$(cat src/main.rs)

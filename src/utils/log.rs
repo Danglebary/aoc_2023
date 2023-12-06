@@ -28,7 +28,7 @@ impl Logger {
         ascii_art::day_and_part(day, part)
     }
 
-    pub fn numeric_answer(answer: usize) {
+    pub fn numeric_answer(answer: u64) {
         ascii_art::numeric_answer(answer);
     }
 

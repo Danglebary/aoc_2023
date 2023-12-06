@@ -1,5 +1,7 @@
+mod day_five;
 mod day_four;
 mod day_one;
+mod day_six;
 mod day_three;
 mod day_two;
 mod utils;
@@ -40,6 +42,16 @@ fn main() {
         "4" => match part {
             "1" => day_four::part_one::run(),
             "2" => day_four::part_two::run(),
+            _ => println!("Invalid part number: {}", part),
+        },
+        "5" => match part {
+            "1" => day_five::part_one::run(),
+            "2" => day_five::part_two::run(),
+            _ => println!("Invalid part number: {}", part),
+        },
+        "6" => match part {
+            "1" => day_six::part_one::run(),
+            "2" => day_six::part_two::run(),
             _ => println!("Invalid part number: {}", part),
         },
         _ => println!("Invalid day number: {}", day),

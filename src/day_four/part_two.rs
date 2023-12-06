@@ -69,7 +69,7 @@ pub fn run() {
         // println!("{:?}", thing_hash);
     }
 
-    let num_scratchers: usize = thing_hash.values().sum();
+    let answer: usize = thing_hash.values().sum();
 
-    Logger::numeric_answer(num_scratchers);
+    Logger::numeric_answer(answer as u64);
 }

@@ -4,7 +4,7 @@ use std::collections::HashSet;
 #[allow(dead_code)]
 pub fn run() {
     let grid = file::read_file_lines("src/day_three/input.txt").unwrap();
-    let mut total: usize = 0;
+    let mut answer: u64 = 0;
 
     for (row_idx, row) in grid.iter().enumerate() {
         for (col_idx, char) in row.chars().enumerate() {
@@ -54,9 +54,9 @@ pub fn run() {
                 nums.push(str.parse::<usize>().unwrap());
             }
 
-            total += nums[0] * nums[1];
+            answer += (nums[0] * nums[1]) as u64;
         }
     }
 
-    Logger::numeric_answer(total);
+    Logger::numeric_answer(answer);
 }

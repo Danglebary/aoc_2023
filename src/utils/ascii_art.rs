@@ -166,7 +166,7 @@ pub fn day_and_part(day: &str, part: &str) {
     print!("{message}");
 }
 
-pub fn number_to_ascii(number: usize) -> String {
+pub fn number_to_ascii(number: u64) -> String {
     let number_str = number.to_string();
 
     let ascii_nums: Vec<String> = number_str
@@ -201,7 +201,7 @@ pub fn number_to_ascii(number: usize) -> String {
     result
 }
 
-pub fn numeric_answer(numeric_answer: usize) {
+pub fn numeric_answer(numeric_answer: u64) {
     let ascii_answer = file::read("ascii_art/answer.txt").unwrap();
     let ascii_colon = file::read("ascii_art/colon.txt").unwrap();
 

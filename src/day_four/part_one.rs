@@ -5,7 +5,7 @@ pub fn run() {
     let input = file::read_file_lines("src/day_four/input.txt").unwrap();
     // let input = file::read_file_lines("src/day_four/sample.txt").unwrap();
 
-    let mut score: usize = 0;
+    let mut answer: usize = 0;
 
     for line in input.iter() {
         let parts: Vec<&str> = line.split("|").collect();
@@ -49,8 +49,8 @@ pub fn run() {
             }
         }
 
-        score += our_score;
+        answer += our_score;
     }
 
-    Logger::numeric_answer(score);
+    Logger::numeric_answer(answer as u64);
 }
